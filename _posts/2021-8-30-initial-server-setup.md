@@ -36,7 +36,3 @@ After saving the sshd_config file, restart the ssh daemon
 ```bash
 sudo systemctl restart ssh
 ```
-Lock the root account
-```bash
-sudo usermod -L root
-```
