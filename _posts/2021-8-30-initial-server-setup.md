@@ -1,43 +1,42 @@
 ---
 layout: post
 title:  Initial Server Setup
-categories: [HTML,Code]
+categories: [Debian]
 ---
 
-This post demonstrate the use of code snippets in the theme. The code snippets are powered by [Pygments](http://pygments.org/) and the code theme that is been used in Reverie is called [Draula](https://draculatheme.com/).
+Getting our new vm running Debian 11 ready. 
+After logging in as root (details from provider email), we want to create a new user account, root account will be disabled thereafter.
 
-This is a raw snippet:
 
 ```bash
-sudo apt update
-hello world
-123
-This is a text snippet
+ssh root@my_server_ip
+adduser debian12345
 ```
 
-This is a PHP snippet:
-
-```php
-<?php
-    echo 'Hello, World!';
-?>
+Granting our new user account with Adminstrative privileges, thereafter try logging with the new account to ensure you can log in
+```bash
+usermod -aG sudo debian12345
 ```
-
-This is a JavaScript snippet:
-
-```js
-const add = (a, b) => a + b
-const minus = (a, b) => a - b
-
-console.log(add(100,200))  // 300
-console.log(minus(100,200))  // -100
+if faced with the below error message
 ```
-
-This is a Python snippet:
-
-```python
-def say_hello():
-    print("hello world!")
-
-say_hello()   // "hello world!"
+sudo command not found.
+```
+sudo needs to be installed
+```bash
+apt install sudo
+```
+Next on the list is to change the ssh port, reduce login grace period and disable root login
+```bash
+sudo nano /etc/ssh/sshd_config
+Port 54781
+LoginGraceTime 1m
+PermitRootLogin No
+```
+After saving the sshd_config file, restart the ssh daemon
+```bash
+sudo systemctl restart ssh
+```
+Lock the root account
+```bash
+sudo usermod -L root
 ```
