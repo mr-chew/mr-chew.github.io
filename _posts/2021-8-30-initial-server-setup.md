@@ -8,7 +8,8 @@ This post demonstrate the use of code snippets in the theme. The code snippets a
 
 This is a raw snippet:
 
-```
+```bash
+sudo apt update
 hello world
 123
 This is a text snippet
