@@ -4,7 +4,7 @@ title:  Bash Completion
 categories: [Debian, Bash]
 ---
 
-Bash Completion is a useful feature where we type a partial command and press Tab to complete it. Hoever it is not enabled in Debian by default. 
+Bash Completion is a useful feature where we type a partial command and press Tab to complete it. However it is not enabled in Debian by default. 
 First we need to install it and then update the profile file.
 
 ```bash
