@@ -22,7 +22,6 @@ Therefore the height of the container will be the lower of the two elements at t
 
 The function will compute the area between the 2 pointer and compare result with current max area. If the result is greater than current max area, it will update it as the current max area. Thereafter, it compare the height of the 2 pointer and shift the pointer that is shorter [to compensate for the reduction in width, we want to move the pointer that is shorter to a taller line]
 
-
 ```python
 class Solution:
     def maxArea(self, height: list[int]) -> int:
