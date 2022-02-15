@@ -47,7 +47,7 @@ The computed area will be compared with the `current_max_area`, if the computed 
                 current_max_area = area
 ```
 
-As we reduced the width (i.e. shifting the pointer inwards), We want to shift the pointer with the shorter height inwards to compensate for the reduction in width. The height of the left and right pointer will be compared and the one that is shorter will be shifted in wards.
+As we reduced the width (i.e. shifting the pointer inwards), We want to shift the pointer with the shorter height inwards to compensate for the reduction in width. The height of the left and right pointer will be compared and the one that is shorter will be shifted inwards.
 
 Once the while loop exit, the function will return the `current_max_area` which is the maximum amount of water the container can contained.  
 ```python
