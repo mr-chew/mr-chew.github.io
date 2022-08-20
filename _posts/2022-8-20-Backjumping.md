@@ -223,6 +223,7 @@ print(table)
 ## Time and Space Complexity
 
 Time Complexity: O(N!)
+
 Space: O(N * (N-D)) where D refer to the depth of the backjump.
 
 ## Conclusion
