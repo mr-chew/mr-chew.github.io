@@ -4,8 +4,6 @@ title:  Backjumping
 categories: [Backtracking]
 ---
 
-## Backjumping
-
 Here we have covered the concept of Backjumping which is an improvement to the Backtracking Algorithm. We will solve the N-Queens Problem by making use of the Backjumping Algorithm. We have presented the Time and Space Complexity for various cases.
 
 **Table of contents:**
