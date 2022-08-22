@@ -20,7 +20,7 @@ Therefore the height of the container will be the lower of the two elements at t
 
 The function will compute the area between the 2 pointer and compare result with current max area. If the result is greater than current max area, it will update it as the current max area. Thereafter, it compare the height of the 2 pointer and shift the pointer that is shorter [to compensate for the reduction in width, we want to move the pointer that is shorter to a taller line]
 
-### Explaination of the codes
+### Explanation of the codes
 
 I create a class named `Solution` with a function `maxArea` which take in a `list` of `integers` (height) and return an `integer`. There are 3 variables, `current_max_area` (this variable is used to store the current computed max area which is set at 0), `left` pointer (value set to the first integer position in the list) and `right` pointer (value set to the last integer position in the list). 
 
@@ -45,7 +45,7 @@ The computed area will be compared with the `current_max_area`, if the computed 
                 current_max_area = area
 ```
 
-As we reduced the width (i.e. shifting the pointer inwards), We want to shift the pointer with the shorter height inwards to compensate for the reduction in width. The height of the left and right pointer will be compared and the one that is shorter will be shifted inwards.
+As we reduced the width (that is shifting the pointer inwards), We want to shift the pointer with the shorter height inwards to compensate for the reduction in width. The height of the left and right pointer will be compared and the one that is shorter will be shifted inwards.
 
 Once the while loop exit, the function will return the `current_max_area` which is the maximum amount of water the container can contained.  
 ```python
