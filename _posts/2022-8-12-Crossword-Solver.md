@@ -32,11 +32,11 @@ Backtracking is a form of brute-force approach that comes into play when address
 The method described above can be used to solve the crossword puzzle. This backtracking algorithm traverses all the vacant cells, incrementally fills the cells with possible words retrieved from a dictionary file, then backtracks when a word filled does not comply with the constraint. This process is repeated until all of the cells are filled.
 
 ###### Steps
-- We begin by looking for a continous row/column of empty cells.
+- We begin by looking for a continuous row/column of empty cells.
 - A valid crossword is obtained when all of the cells are filled.
-- We try to fill the continous row/column of empty cells with values retrieved from the dictionary file.
-- We examine the intersection point between the horizontal and vertical words for contraint before placing.
-- If we can satisfy the contraints, we will place that word at that location, start-coordinates(a,b), end-coordinates(x,y) and then restart the procedure by looking for the next continous row/column of empty cells.
+- We try to fill the continuous row/column of empty cells with values retrieved from the dictionary file.
+- We examine the intersection point between the horizontal and vertical words for constraint before placing.
+- If we can satisfy the constraints, we will place that word at that location, start-coordinates(a,b), end-coordinates(x,y) and then restart the procedure by looking for the next continuous row/column of empty cells.
 - If none of the words can be placed, we'll have to backtrack and alter the values for previously visited cells.
 
 Let's take a closer look at the algorithm.
@@ -55,7 +55,7 @@ backtrack_solver(crossword)
 ```
 
 ###### Implementation
-Implementaion of the above backtracking algorithm :
+Implementation of the above backtracking algorithm :
 
 The `copy` library is imported to enable the usage of the `deepcopy()` function. In the case of deep copy, an object is copied in another object. It means that any changes made to a copy of an object are not reflected in the original. The `shapely` library is imported to allow us to find the intersection point(constraint) in the crossword.
 
@@ -182,16 +182,16 @@ def find_vertical_words(crossword):
 					started = False
 	return vertical_words
 ```
-Next we defined the backtracking algorithm function. The function take in three variable, `assigned_variable_list`, `not_assigned_variable_list`, `dict`. The `not_assigned_variable_list` consist of all the horizontal and vertical words pending to be filled in the crossword. The `dict` variable is the value returned by the load_dictionary() function. The `assigned_variable_list` hold all the values that satisfy the contraint in the crossword.
+Next we defined the backtracking algorithm function. The function take in three variable, `assigned_variable_list`, `not_assigned_variable_list`, `dict`. The `not_assigned_variable_list` consist of all the horizontal and vertical words pending to be filled in the crossword. The `dict` variable is the value returned by the load_dictionary() function. The `assigned_variable_list` hold all the values that satisfy the constraint in the crossword.
 
-Next the `get_possible_values()` is called to return all possible words(values) that fit the word length of the crossword. The `check_constraint()` function is called to ensure the value assigned satisfy the contraint of the crossword.
+Next the `get_possible_values()` is called to return all possible words(values) that fit the word length of the crossword. The `check_constraint()` function is called to ensure the value assigned satisfy the constraint of the crossword.
 
 If all possible values are unable to satisfy the constraint, it means that the previous "word" assigned was wrong and hence the algorithm will backtrack and leave the word cell unassigned to try another possibilities.
 
 ```python
 def backtracking(assigned_variable_list, not_assigned_variable_list, dict):
 
-	#theres are no variables to assign a value so we are done
+	#there are no variables to assign a value so we are done
 	if len(not_assigned_variable_list) == 0:
 		return assigned_variable_list
 
@@ -352,7 +352,7 @@ Time Complexity of our Backtracking approach: O((M * P)^D)
 
 where:
 
-- N is the number of continous row/columns of empty cell (word to be filled) in the grid
+- N is the number of continuous row/columns of empty cell (word to be filled) in the grid
 - P is the lists of possible word to be tested for the crossword constraint.
 - For the backtracking function, the depth(D) of the this recursive function which will be equal to the crossword constraint. D = intersection point(s) between the horizontal and vertical words.
 - M is the average length of word
