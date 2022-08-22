@@ -68,14 +68,11 @@ from shapely.geometry import LineString
 class Word:
 	#coordinates of the starting and ending point
 	start_coord = ()
-	end_coord = ()
-	
+	end_coord = ()	
 	#horizontal word = 0, vertical word = 1
-	orientation = 0
-	
+	orientation = 0	
 	#word length
 	length = 0
-
 	#value assigned to this word
 	value = ''
 ```
