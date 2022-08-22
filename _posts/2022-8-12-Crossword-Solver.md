@@ -66,7 +66,6 @@ import copy
 from shapely.geometry import LineString
 
 class Word:
-	
 	#coordinates of the starting and ending point
 	start_coord = ()
 	end_coord = ()
@@ -110,9 +109,7 @@ The function `find_vertical_words(crossword)` verify whether the orientation of 
 ```python
 def find_horizontal_words(crossword):
 	horizontal_words = []
-
-	for row in range(len(crossword)):
-		
+	for row in range(len(crossword)):		
 		column = 0
 		word = Word()
 		finished = False
@@ -139,7 +136,6 @@ def find_horizontal_words(crossword):
 					prev = '0'
 
 			elif crossword[row][column] == '#':
-				
 				if prev == '0':
 					if not finished:
 						finished = True
@@ -155,8 +151,7 @@ def find_horizontal_words(crossword):
 				word = Word()
 				finished = False	
 
-			column += 1
-		
+			column += 1		
 	return horizontal_words
 
 def find_vertical_words(crossword):
@@ -202,8 +197,7 @@ def backtracking(assigned_variable_list, not_assigned_variable_list, dict):
 	if len(not_assigned_variable_list) == 0:
 		return assigned_variable_list
 
-	var = not_assigned_variable_list[0]
-	
+	var = not_assigned_variable_list[0]	
 	possible_val = get_possible_values(var, assigned_variable_list, dict)
 
 	for val in possible_val:
@@ -218,7 +212,6 @@ def backtracking(assigned_variable_list, not_assigned_variable_list, dict):
             # we've reached here because the choice we made by putting some 'word' here was wrong 
             # hence now leave the word cell unassigned to try another possibilities 
 			var.value = ''
-
 	return None
 ```
 
@@ -228,7 +221,6 @@ The `get_possible_values` function is to go through the dictionary and return al
 #returns all possible values for the desired variable
 def get_possible_values(var, assigned_variable_list, dict):
 	possibles_values = []
-	
 	for val in dict:
 		if len(val) == var.length:
 			possibles_values.append(val)
@@ -236,7 +228,6 @@ def get_possible_values(var, assigned_variable_list, dict):
 	for item in assigned_variable_list:
 		if item.value in possibles_values:
 			possibles_values.remove(item.value)
-
 	return possibles_values
 ```
 
@@ -265,9 +256,7 @@ def check_constraint(var, assigned_variable_list):
 def check_intersections(w1, w2):
 	line1 = LineString([w1.start_coord, w1.end_coord])
 	line2 = LineString([w2.start_coord, w2.end_coord])
-
 	intersection_point = line1.intersection(line2)
-
 	if not intersection_point.is_empty:
 		return [intersection_point.coords[0]] #result(float)
 	else:
