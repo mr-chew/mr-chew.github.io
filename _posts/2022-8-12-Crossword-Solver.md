@@ -115,10 +115,8 @@ def find_horizontal_words(crossword):
 		finished = False
 		prev = '#' #prev mean the previous char in the word
 
-		while column <= len(crossword[row])-1:
-			
-			if crossword[row][column] == '0':
-				
+		while column <= len(crossword[row])-1:			
+			if crossword[row][column] == '0':				
 				if prev == '0':
 					word.length += 1
 					prev = '0'
