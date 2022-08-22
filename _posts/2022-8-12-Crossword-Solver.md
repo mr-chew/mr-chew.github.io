@@ -19,7 +19,7 @@ A crossword is a word puzzle that usually consists of a square or rectangular gr
 
 Crossword Puzzle | Solution
 ---|---
-![crossword-puzzle](/content/images/2022/05/crossword-puzzle.png) | ![crossword-solution](/content/images/2022/05/crossword-solution.png)
+![crossword-puzzle](/images/content/2022/08/crossword-puzzle.png) | ![crossword-solution](/images/content/2022/08/crossword-solution.png)
 
 The goal is to fill all of the empty cells in a 6x6 grid with words such that the grid becomes valid. The constraint here is that the character at the intersection point have to be the same.
 
