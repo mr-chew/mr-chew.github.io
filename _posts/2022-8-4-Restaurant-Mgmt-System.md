@@ -77,7 +77,7 @@ The data tier maintains the application's data such as order data, menu data, re
 ###### Subsystem Decomposition
 Decomposing the system into smaller units called subsystems will help reduce the complexity of the system. Subsystems are just packages holding related classes. Our restaurant management system is also decomposed into subsystems as follows. The major subsystems are 'Authentication', 'Menu', 'Reservation', 'Order', and 'Kitchen' systems.
 
-![subsystems-1](/images/content/2022/08/subsystems.png)
+![subsystems](/images/content/2022/08/subsystems.png)
 
 The Authentication subsystem authenticates a user to grant access based on the role of the user.
 
