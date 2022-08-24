@@ -247,7 +247,7 @@ def check_constraint(var, assigned_variable_list):
 							return False
 	return True
 
-#treat words here like lines so we find the intersection point of horizontal and vertical words (the character position - intersection point is the constraints which the algorithm must apply to get a valid solution)
+# determine the constraint which the algorithm must apply to get a valid solution
 def check_intersections(w1, w2):
 	line1 = LineString([w1.start_coord, w1.end_coord])
 	line2 = LineString([w2.start_coord, w2.end_coord])
@@ -258,7 +258,7 @@ def check_intersections(w1, w2):
 		return []
 ```
 
-The function 1insert_word_to_puzzle()1 will now insert the word found by our solver into the crossword base on their orientation, starting coordinates and ending coordinates.
+The function `insert_word_to_puzzle()` will now insert the word found by our solver into the crossword base on their orientation, starting coordinates and ending coordinates.
 
 ```python
 def insert_word_to_puzzle(crossword, word, coord, orientation):
@@ -321,7 +321,7 @@ else:
 print("------------------------------")
 ```
 
-Once we run the code, we should see the following output
+Once we run the code, we should see the following output:
 
 ```
 ---------- Crossword ---------
@@ -345,16 +345,7 @@ Once we run the code, we should see the following output
 ## Time and Space Complexity
 ###### Time Complexity
 
-Time Complexity of our Backtracking approach: O((M * P)^D)
-
-where:
-
-- N is the number of continuous row/columns of empty cell (word to be filled) in the grid
-- P is the lists of possible word to be tested for the crossword constraint.
-- For the backtracking function, the depth(D) of the this recursive function which will be equal to the crossword constraint. D = intersection point(s) between the horizontal and vertical words.
-- M is the average length of word
-
-The Time Complexity will be O((M * P)^D) as each continuous cells will have only one word so D+1 words will be used. At each intersection, we need to check P words. M is the average length of word and this is needed as we need to check constraints (reading time of a string).
+O((M * P)^D): Each continuous cells will have only one word so D+1 words will be used. At each intersection, we need to check P words. M is the average length of word and this is needed as we need to check constraints (reading time of a string).
 
 ###### Space Complexity
 O(L) : where L is the length of the given word. This space is used for recursion stack.
