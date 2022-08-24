@@ -183,7 +183,7 @@ Next we defined the backtracking algorithm function. The function take in three 
 
 Next, the `get_possible_values()` is called to return all possible words(values) that fit the word length of the crossword. The `check_constraint()` function is called to ensure the value assigned satisfy the constraint of the crossword.
 
-If all possible values are unable to satisfy the constraint, this meant that the previous "word" assigned was wrong. The algorithm will then backtrack and leave the word cells unassigned to try another possibilities.
+If all possible values are unable to satisfy the constraint, this meant that the previous "word" assigned was wrong. The algorithm will then backtrack and leave the word cells unassigned to try other possibilities.
 
 ```python
 def backtracking(assigned_variable_list, not_assigned_variable_list, dict):
