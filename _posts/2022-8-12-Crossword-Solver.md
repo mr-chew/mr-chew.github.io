@@ -36,7 +36,7 @@ The method described above can be used to solve the crossword puzzle. This backt
 - A valid crossword is obtained when all of the cells are filled.
 - We try to fill the continuous row/column of empty cells with values retrieved from the dictionary file.
 - We examine the intersection point between the horizontal and vertical words for constraint before placing.
-- If we can satisfy the constraints, we will place that word at that location, start-coordinates(a,b), end-coordinates(x,y) and then restart the procedure by looking for the next continuous row/column of empty cells.
+- If we can satisfy the constraints, we will place that word at that location, `start-coordinates(a,b)`, `end-coordinates(x,y)` and then restart the procedure by looking for the next continuous row/column of empty cells.
 - If none of the words can be placed, we'll have to backtrack and alter the values for previously visited cells.
 
 Let's take a closer look at the algorithm.
