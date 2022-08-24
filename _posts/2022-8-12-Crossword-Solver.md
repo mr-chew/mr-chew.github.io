@@ -179,11 +179,11 @@ def find_vertical_words(crossword):
 					started = False
 	return vertical_words
 ```
-Next we defined the backtracking algorithm function. The function take in three variable, `assigned_variable_list`, `not_assigned_variable_list`, `dict`. The `not_assigned_variable_list` consist of all the horizontal and vertical words pending to be filled in the crossword. The `dict` variable is the value returned by the load_dictionary() function. The `assigned_variable_list` hold all the values that satisfy the constraint in the crossword.
+Next we defined the backtracking algorithm function. The function take in three variable, `assigned_variable_list`, `not_assigned_variable_list` and `dict`. The `not_assigned_variable_list` consist of all the horizontal and vertical words pending to be filled in the crossword. The `dict` variable is the value returned by the load_dictionary() function. The `assigned_variable_list` hold all the values that satisfy the constraint in the crossword.
 
-Next the `get_possible_values()` is called to return all possible words(values) that fit the word length of the crossword. The `check_constraint()` function is called to ensure the value assigned satisfy the constraint of the crossword.
+Next, the `get_possible_values()` is called to return all possible words(values) that fit the word length of the crossword. The `check_constraint()` function is called to ensure the value assigned satisfy the constraint of the crossword.
 
-If all possible values are unable to satisfy the constraint, it means that the previous "word" assigned was wrong and hence the algorithm will backtrack and leave the word cell unassigned to try another possibilities.
+If all possible values are unable to satisfy the constraint, this meant that the previous "word" assigned was wrong. The algorithm will then backtrack and leave the word cells unassigned to try another possibilities.
 
 ```python
 def backtracking(assigned_variable_list, not_assigned_variable_list, dict):
