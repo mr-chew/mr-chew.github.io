@@ -50,7 +50,7 @@ backjump_solver(starting_row)
 
 To illustrate the conflict set concept, the Queen at row 5 is in conflict with Queen at (row 0), (rows 2 and 4), (rows 3 and 4), (rows 1 and 4), (rows 2 and 3) and (row 0).
 
-In this instance, a dead end is reached in the search tree. To perform a safe and maximal jump, only the earliest row that is in conflict will be selected. The resulting conflict set will be rows(0,2,3,1,2,0) and for the maximal jump, the latest row that is in conflict will be the Queen at row 3. As such, the Backjumping algorithm will jump to the Queen at row 3.
+In this instance, a dead end is reached in the search tree. To perform a safe and maximal jump, only the earliest row that is in conflict will be selected. The resulting conflict set will be rows(0, 2, 3, 1, 2, 0) and for the maximal jump, the latest row that is in conflict will be the Queen at row 3. As such, the Backjumping algorithm will jump to the Queen at row 3.
 
 Implementation of the above backtracking algorithm :
 
