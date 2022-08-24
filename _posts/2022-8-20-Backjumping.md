@@ -14,7 +14,7 @@ We are going to cover the concept of Backjumping which is an improvement to the 
 4. Conclusion
 
 ## Introduction
-The goal of the "N-Queens Problem" is to arrange `n` queens on a N × N chessboard so that none of them can attack one another by being in the same row, column, or diagonal. The problem has a simple solution when `n = 1` and there is none when `n = 2` and `n = 3`. The answer to the N-Queens problem, when N (board size) = 6, is as follows.
+The goal of the "N-Queens Problem" is to arrange `N` queens on a N × N chessboard so that none of them can attack one another by being in the same row, column, or diagonal. The problem has a simple solution when `N = 1` and there is none when `N = 2` and `N = 3`. The answer to the N-Queens problem, when N (board size) = 6, is as follows.
 
 N-Queens Problem | Solution
 ---|---
