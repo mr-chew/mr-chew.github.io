@@ -4,7 +4,7 @@ title:  Solving Crossword using Backtracking
 categories: [Backtracking]
 ---
 
-Here we have covered the Backtracking Algorithm for Crossword and compared with the Brute Force approach. We have presented the Time and Space Complexity for various cases.
+We are going to cover the Backtracking Algorithm for Crossword and compared it with the Brute Force approach. The Time and Space Complexity will be discussed at the end of the article.
 
 **Table of contents:**
 
