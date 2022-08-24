@@ -24,7 +24,7 @@ We will take a look at the key features a restaurant management system needs to 
 A restaurant management system is a software that helps the restaurant industry streamline their food business operations. It provides a complete set of features including Point of Sales system, payment processing, table reservations, inventory management , accounting and employee management.
 
 ## System Requirements
-The system we will be designing will provide the most important features that every restaurant management system must offer. However, do note that a restaurant management system can have other sub-systems for accounting, employee managment, etc.
+The system we will be designing will provide the most important features that every restaurant management system must offer. However, do note that a restaurant management system can have other sub-systems for accounting, employee management, etc.
 
 ###### Functional Requirements
 The restaurant management system should at least include the following features,
