@@ -31,7 +31,7 @@ Gaschnig's Backjumping algorithm only backjumps in leaf dead ends. In other word
 * Place the queens one after the other in columns.
 * We check for all rows in the current column for constraints before placing.
 * If no other Queens are in the same row or diagonal and thus satisfy the constraints, we will place that Queen at that location and record the row and column as part of the solution matrix.
-* If such a column does not exist, we return false and backjump.
+* If such a column does not exist, the algorithm will return false and performs a backjump.
 
 Let's take a closer look at the algorithm.
 ###### Pseudocode
