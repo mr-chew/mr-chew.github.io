@@ -90,7 +90,7 @@ If no solution is found yet, we will proceed to search for a safe location to pl
                     return self.place_queen()
 ```
 
-If we are unable to find any safe location for the current column, we will retrieve the `conflict_set` for the particular column. The greatest value of the `conflict_set` will be the maximal column to backjump to. The column that we backjumped to and the subsequent columns will be emptied by setting it to `[]`. The `place_queen` function will be called to proceed to work on the backjumped column.
+If we are unable to find any safe location for the current column, we will retrieve the `conflict_set` for the particular column. The greatest value of the `conflict_set` will be the maximal column to backjump to. The column that we backjumped to and the subsequent columns will be emptied by setting their value to `[]`. The `place_queen` function will be called to proceed to work on the backjumped column.
 ```python
             max_jump = self.conflict_set[len(self.columns)]
             max_jump = set(max_jump)
