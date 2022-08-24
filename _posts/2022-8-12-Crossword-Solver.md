@@ -15,7 +15,7 @@ We are going to cover the Backtracking Algorithm for Crossword and compared it w
 5. Conclusion
 
 ## Introduction
-A crossword is a word puzzle that usually consists of a square or rectangular grid of white and black-shaded squares. By solving clues that lead to the solutions, the goal is to fill the white squares with letters, producing words or phrases. The solution words and phrases are inserted in the grid from left to right ("across") and from top to bottom in languages that are written left to right ("down"). The words or phrases are separated by shaded squares.
+A crossword is a word puzzle that usually consists of a square or rectangular grid of white and black-shaded squares. By solving clues that lead to the solutions, the goal is to fill the white squares with letters, producing words or phrases. The solution words and phrases are inserted in the grid from left to right ("across") and from top to bottom in languages that are written left to right ("down"). The words or phrases are separated by the shaded squares.
 
 Crossword Puzzle | Solution
 ---|---
