@@ -71,7 +71,7 @@ class NQueenSolver:
         self.conflict_set = {new_list: [] for new_list in range(self.size)}
 ```
 
-The `place_queen` function take in a variable `starting_row` which initialised the value as `0`. If the length of the variable `columns` is equal to the variable `size`, this means that every column has a queen and we have found a solution. Our program will proceed to print out the solution.
+The `place_queen` function take in a variable `starting_row` which the value is initialised as `0`. If the length of the variable `columns` is equal to the variable `size`, this means that every column has a queen and we have found a solution. Our program will proceed to print out the solution.
 ```python
     def place_queen(self, starting_row=0):
         if len(self.columns) == self.size:
