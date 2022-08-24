@@ -235,7 +235,7 @@ The `check_intersections()` make use of the `LineString` function from the `shap
 def check_constraint(var, assigned_variable_list):
 	if assigned_variable_list != None:
 		for word in assigned_variable_list:
-			#if orientation is equal they will never interesect!
+			#if orientation is equal they will never intersect
 			if var.orientation != word.orientation:
 				intersection = check_intersections(var, word)
 				if len(intersection) != 0:
