@@ -59,7 +59,7 @@ Implementation of the above backtracking algorithm :
 
 The `copy` library is imported to enable the usage of the `deepcopy()` function. In the case of deep copy, an object is copied in another object. It means that any changes made to a copy of an object are not reflected in the original. The `shapely` library is imported to allow us to find the intersection point(constraint) in the crossword.
 
-The class is used to represents each word in the crossword puzzle. When we apply backtracking later, we use the value variable to assign values to each word.
+The class is used to represents each word in the crossword puzzle. When we apply backtracking later, we use the `value` variable to assign values to each word.
 
 ```python
 import copy
@@ -76,7 +76,7 @@ class Word:
 	#value assigned to this word
 	value = ''
 ```
-The load_crossword_puzzle and load_dictionary function take in one input (filename), read content of the file, clean it up by removing the tabs, newlines and spaces and return the result as a list.
+The `load_crossword_puzzle` and `load_dictionary` function accept an input (filename) and will proceed to read the content of the file. In order to have useful data to work with, it perform a "clean up" by removing the tabs, newlines and spaces and return the result as a list.
 
 ```python
 def load_crossword_puzzle(filename):
