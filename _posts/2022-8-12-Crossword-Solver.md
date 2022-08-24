@@ -228,7 +228,7 @@ def get_possible_values(var, assigned_variable_list, dict):
 
 The function `check_constraint()` check the proposed value to be assigned (`var`) against the `assigned_variable_list`. If they are the same orientation (both are horizontal or both are vertical), no further check is needed. If otherwise (one is horizontal and the other is vertical), the `check_intersections()` will be called to help check for the intersection point (if any).
 
-The `check_intersections()` make use of the `LineString` function from the `shapely` module which we imported earlier. As we treat words here like lines, we can find the intersection point of horizontal and vertical words (the character position - intersection point is the constraints which the algorithm must apply to get a valid solution)
+The `check_intersections()` make use of the `LineString` function from the `shapely` module which we imported earlier. We treat the words as if they were lines and use this idea to find the intersection point of the horizontal and vertical words. This intersection point is the constraint which the algorithm must apply to find a valid solution.
 
 ```python
 #checks var against assigned variable list
