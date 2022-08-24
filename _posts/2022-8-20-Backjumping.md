@@ -71,7 +71,7 @@ class NQueenSolver:
         self.conflict_set = {new_list: [] for new_list in range(self.size)}
 ```
 
-The `place_queen` function take in a variable `starting_row` which the value is initialised as `0`. If the length of the variable `columns` is equal to the variable `size`, this means that every column has a queen and we have found a solution. Our program will proceed to print out the solution.
+The `place_queen` function take in a variable `starting_row` and we will set the initial value as `0`. If the length of the variable `columns` is equal to the variable `size`, this means that every column has a queen and we have found a solution. Our program will proceed to print out the solution.
 ```python
     def place_queen(self, starting_row=0):
         if len(self.columns) == self.size:
@@ -90,7 +90,7 @@ If no solution is found yet, we will proceed to search for a safe location to pl
                     return self.place_queen()
 ```
 
-If we are unable to find any safe location for the current column, we will retrieve the `conflict_set` for the particular column. The greatest value of the `conflict_set` will be the maximal column to backjump. The `conflict_set` variable for the column that we backjumped to and the later columns will be emptied, that is set to `[]`. The `place_queen` function will be called to proceed to work on the backjumped column.
+If we are unable to find any safe location for the current column, we will retrieve the `conflict_set` for the particular column. The greatest value of the `conflict_set` will be the maximal column to backjump to. The `conflict_set` variable for the column that we backjumped to and the later columns will be emptied, that is set to `[]`. The `place_queen` function will be called to proceed to work on the backjumped column.
 ```python
             max_jump = self.conflict_set[len(self.columns)]
             max_jump = set(max_jump)
