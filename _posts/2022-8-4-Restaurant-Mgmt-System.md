@@ -41,19 +41,19 @@ A better understanding of the functional requirements can be gained from the use
 
 ###### Non - Functional Requirements
 
-**Usability**
+**Usability** <br>
 The system should provide an interactive user-friendly interface that is easily understandable for all users.
 
-**Availability**
+**Availability** <br>
 The System should be available at least during the restaurant operating hours and must be recovered within an hour if it fails. The system should respond to the requests within two seconds.
 
-**Dependability**
+**Dependability** <br>
 The system should provide consistent performance with easy tracking of records and updating of records.
 
-**Maintainability**
+**Maintainability** <br>
 The software should be easily maintainable. Adding additional features and making changes to the software must be as simple as possible.
 
-**Security**
+**Security** <br>
 Only authorized users can access the system to view and change the data.
 
 ###### Software Requirements
