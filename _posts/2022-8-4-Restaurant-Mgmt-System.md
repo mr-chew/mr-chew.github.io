@@ -63,14 +63,14 @@ Only authorized users can access the system to view and change the data.
 4. Relational database management system such as MySQL, PostgreSQL.
 
 ## System Design
-With our understanding of the functional and non-functional requirements of our system, we will now look at the system architecture, decomposition, and database design.
+With our understanding of the functional and non-functional requirements of our system, we will now look at the system architecture, subsystems decomposition and database design.
 
 ###### Architecture of the System
 The restaurant management system follows a simple 3 tier client/server architecture. The client can use web browsers on a tablet to access the system (restaurant menu) through the local area network of the restaurant using Hypertext Transfer Protocol Secure (HTTPS).
 
 ![System-Architecture](/images/content/2022/08/System-Architecture.png)
 
-The middle tier which includes the server presents the website to the user and controls the business logic. It controls the interactions between the application and the user. The server also send the user orders to both the Point of Sales system and Kitchen Order Tickets printers. Common web server technology used here can be Apache, Nginx, etc.
+The middle tier includes the server which presents the website to the user and controls the business logic. It controls the interactions between the application and the user. The server also send the user orders to both the Point of Sales system and Kitchen Order Tickets printers. Common web server technology used here can be Apache, Nginx, etc.
 
 The data tier maintains the application's data such as order data, menu data, reservation data, etc. It stores these data in a relational database management system like PostgreSQL. The client tier interacts with the server to make requests and retrieve data from the database. It then displays to the user the data retrieved from the server.
 
@@ -171,13 +171,13 @@ class Inventory:
         inventory_quantity:int
         ):
 ```
-The Person class is the base class for all the employees of the restaurant. The Staff class adds the necessary information for authenticating a user. The Restaurant class inherits from the Staff class and has functions to add and remove items to the order, manage table reservations and create invoice to bill the customer.
+The `Person` class is the base class for all the employees of the restaurant. The `Staff` class adds the necessary information for authenticating a user. The `Restaurant` class inherits from the `Staff` class and has functions to add and remove items to the order, manage table reservations and create invoice to bill the customer.
 
-The Kitchen class also inherit from the Staff class. The Kitchen class can view the customer order and manage the inventory of the ingredients they used.
+The `Kitchen` class also inherit from the Staff class. The `Kitchen` class can view the customer order and manage the inventory of the ingredients they used.
 
-The Customer can add item and remove item to the order before submitting. In addition they can create table reservation request and amend it.
+The `Customer` can add item and remove item to the order before submitting. In addition they can create table reservation request and amend it.
 
-The Menu class contains information about the item on the restaurant menu. The Inventory class contains information to keep track of the ingredients used by the restaurant to prepare the food.
+The `Menu` class contains information about the item on the restaurant menu. The `Inventory` class contains information to keep track of the ingredients used by the restaurant to prepare the food.
 
 ###### Database Design
 A restaurant management system software needs to store data about the Order, Menu, Reservations, etc. Therefore, we have identified the major tables that will be implemented on the selected relational database management system.
