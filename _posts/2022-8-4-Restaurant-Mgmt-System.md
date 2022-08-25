@@ -173,7 +173,7 @@ class Inventory:
 ```
 The `Person` class is the base class for all the employees of the restaurant. The `Staff` class adds the necessary information for authenticating a user. The `Restaurant` class inherits from the `Staff` class and has functions to add and remove items to the order, manage table reservations and create invoice to bill the customer.
 
-The `Kitchen` class also inherit from the Staff class. The `Kitchen` class can view the customer order and manage the inventory of the ingredients they used.
+The `Kitchen` class also inherit from the `Staff` class. The `Kitchen` class can view the customer order and manage the inventory of the ingredients they used.
 
 The `Customer` can add item and remove item to the order before submitting. In addition they can create table reservation request and amend it.
 
