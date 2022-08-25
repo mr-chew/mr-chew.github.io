@@ -23,7 +23,7 @@ We will take a look at the key features a IP/ Patent management system (IPMS) ne
 4. Turnkey Software Solutions
 
 ## IP/ Patent Management System (IPMS)
-The IPMS is a management and policy encompassing tool that aids in the accumulation and enhancement of the values associated with a good intellectual property (IP) portfolio. When it comes to IP, strategy implementation involves input from several organizational subsystems. As a result, this aids in the maintenance of the framework as well as the portfolio. This process comprises of maintaining the patent portfolio, which includes increasing the flow of potential patents for the decision process.  valuation, cost management, and determining the best conversion parameters to extract value from the patent.
+The IPMS is a management and policy encompassing tool that aids in the accumulation and enhancement of the values associated with a good intellectual property (IP) portfolio. When it comes to IP, strategy implementation involves input from several organizational subsystems. As a result, this aids in the maintenance of the framework as well as the portfolio. This process comprises of maintaining the patent portfolio, which includes increasing the flow of potential patents for the decision process. Valuation, cost management and determining the best conversion parameters to extract value from the patent are part of the process.
 
 ###### Types of Intellectual Property (IP)
 Generally speaking, Intellectual Property (IP) include the following types: Copyrights, Patents, Trademarks and Trade Secrets.
