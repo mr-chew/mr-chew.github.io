@@ -62,7 +62,7 @@ The system should provide an interactive user-friendly interface that is easily 
 
 **Availability**
 
-The System should be available at least during the Patent Registration office operating hours and must be recovered within an hour or less if it fails. The system should respond to the requests within two seconds or less.
+The System should be available at least during the Patent Registration office operating hours and must be recovered within an hour if it fails. The system should respond to the requests within two seconds.
 
 **Dependability**
 
@@ -76,7 +76,7 @@ The software should be easily maintainable and adding new features and making ch
 
 For a large organization like a university, the expected user load for the system will be significant. University are a research center with a massive database of information. The ability to scale is critical to the system's adoption success.
 
-Applying technology such Hadoop's MapReduce will provide the ability to scale the system, Because of its ability to store and distribute enormous data sets across a large number of machines, Hadoop is a highly scalable platform. The servers used here are relatively inexpensive and can run in parallel. The system's processing power can be enhanced by adding extra servers. Traditional relational database management systems, or RDBMS, couldn't handle big data sets at scale.
+Applying technology such Hadoop's MapReduce will provide the ability to scale the system. Hadoop is a highly scalable platform, due to its ability to store and distribute enormous data sets across a large number of machines. The servers used here are relatively inexpensive and can run in parallel. The system's processing power can be enhanced by adding extra servers. Traditional relational database management systems(RDBMS) couldn't handle big data sets at scale.
 
 One such application of MapReduce is Distributed Grep. In plain-text data collections, Distributed Grep looks for lines that match a regular expression. It's used to look for a specific pattern in a large number of files. This will come in handy if the patent application reviewer has to look for related patents in a huge database.
 
@@ -86,7 +86,7 @@ A user login mechanism will be established to prevent unauthorized employees fro
 
 To prevent unauthorized parties from accessing, viewing, or changing parts and information within the system, the system is expected to have several access levels depending on which staff member is accessing the system, such as Inventor, Reviewer or Approver. This means that certain aspects of the system will be restricted to a small group of people based on their position or authority within the organization.
 
-On top of all the other security measures mentioned above, system authentication is by far one of the most significant forms of security that should be included into this system. Returning to the access levels, at certain access levels, an authentication mechanism such as ID scanning may be used to validate specific staff members and grant them access to specific system items.
+On top of all the other security measures mentioned above, system authentication is by far one of the most significant forms of security that should be included into this system. For certain access levels, an authentication mechanism such as ID scanning may be used to validate specific staff members and grant them access to specific system items.
 
 ###### Software Requirements
 
