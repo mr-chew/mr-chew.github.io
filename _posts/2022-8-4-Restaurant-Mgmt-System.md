@@ -175,7 +175,7 @@ The `Person` class is the base class for all the employees of the restaurant. Th
 
 The `Kitchen` class also inherit from the `Staff` class. The `Kitchen` class can view the customer order and manage the inventory of the ingredients they used.
 
-The `Customer` can add item and remove item to the order before submitting. In addition they can create table reservation request and amend it.
+The `Customer` class can add item and remove item to the order before submitting. In addition they can create table reservation request and amend it.
 
 The `Menu` class contains information about the item on the restaurant menu. The `Inventory` class contains information to keep track of the ingredients used by the restaurant to prepare the food.
 
