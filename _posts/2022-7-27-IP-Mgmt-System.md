@@ -172,11 +172,11 @@ class Patent:
         approval_status: str
         ):
 ```
-The `Staff` class is the base class for all the employees of the organization which include the necessary information for authenticating a user. The `Inventor` class inherits from the Staff class and has functions to add and edit the patent application.
+The `Staff` class is the base class for all the employees of the organization which include the necessary information for authenticating a user. The `Inventor` class inherits from the `Staff` class and has functions to add and edit the patent application.
 
-The `Reviewer` class also inherit from the Staff class. The `Reviewer` class can view the patent application and add comments to request more information about the patent application.
+The `Reviewer` class also inherit from the `Staff` class. The `Reviewer` class can view the patent application and add comments to request more information about the patent application.
 
-The `Approver` class also inherit from the Staff class. The `Approver` class can view the patent application and approve/reject the submission of the patent application.
+The `Approver` class also inherit from the `Staff` class. The `Approver` class can view the patent application and approve/reject the submission of the patent application.
 
 The `Patent` class contains information about the patent application.
 
@@ -189,7 +189,7 @@ The above database diagram shows the schema for the IP/ Patent management system
 
 Generally, there are three types of relationships in a relational database system. These are one-to-one, one-to-many, and many-to-many relationships. The system under consideration has one-to-many and many-to-many relationships.
 
-The Patent_Application tables store data of the patent application. The Patent_Application table acts as relation between the Inventor_Staff, Reviewer_Staff and Approver_Staff. The Approved_Patent table stores the details about approved patents held by the organization.
+The `Patent_Application` tables store data of the patent application. The `Patent_Application` table acts as relation between the `Inventor_Staff`, `Reviewer_Staff` and `Approver_Staff`. The `Approved_Patent` table stores the details about approved patents held by the organization.
 
 ## Turnkey Software Solutions
 Below are some of the turnkey software solutions available:
