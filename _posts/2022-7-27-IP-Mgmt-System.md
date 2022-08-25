@@ -46,9 +46,8 @@ The IP/ Patent management system should at least include the following features,
     * monitoring of patent application progress (such as submission of additional information)
     * monitoring of deadline of patent application
     * recording of data and documents to support patent application
-    * generate report of patent application for submission to patent registration office
-    
-2.IP search function of similar registered patent such as
+    * generate report of patent application for submission to patent registration office    
+2. IP search function of similar registered patent such as
     * searching within internal database of patents held by the organization
     * searching external database of patent registration office
 
