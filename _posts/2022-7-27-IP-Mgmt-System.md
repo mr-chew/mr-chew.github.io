@@ -96,10 +96,10 @@ On top of all the other security measures mentioned above, system authentication
 4. Relational DBMS such as MySQL, PostgreSQL.
 
 ## System Design
-With our understanding of the functional and non-functional requirements of our system, we will now look at the system architecture, decomposition, and database design.
+With our understanding of the functional and non-functional requirements of our system, we will now look at the system architecture, subsystem decomposition, and database design.
 
 ###### Architecture of the System
-The IP/ Patent management system follows a simple 3 tier client/server architecture. The client can use web browsers to access the system through the local area network of the organization using the HTTPS protocol.
+The IP/ Patent management system follows a simple 3 tier client/server architecture. The client can use web browsers to access the system through the local area network of the organization using the Hypertext transfer protocol secure (HTTPS) protocol.
 
 ![System-Architecture](/images/content/2022/07/System-Architecture.png)
 
