@@ -78,7 +78,7 @@ One such application of MapReduce is Distributed Grep. In plain-text data collec
 **Security**
 A user login mechanism will be established to prevent unauthorized employees from accessing the system. Any member who has access to the system will be requested to create a username and password that will allow them to use the system's capabilities.
 
-To prevent unauthorized parties from accessing, viewing, or changing parts and information within the system, the system is expected to have several access levels depending on which staff member is accessing the system, such as Inventor, Reviewer or Approver. This means that certain aspects of the system will be restricted to a small group of people based on their position or authority within the organisation.
+To prevent unauthorized parties from accessing, viewing, or changing parts and information within the system, the system is expected to have several access levels depending on which staff member is accessing the system, such as Inventor, Reviewer or Approver. This means that certain aspects of the system will be restricted to a small group of people based on their position or authority within the organization.
 
 On top of all the other security measures mentioned above, system authentication is by far one of the most significant forms of security that should be included into this system. Returning to the access levels, at certain access levels, an authentication mechanism such as ID scanning may be used to validate specific staff members and grant them access to specific system items.
 
@@ -93,7 +93,7 @@ On top of all the other security measures mentioned above, system authentication
 With our understanding of the functional and non-functional requirements of our system, we will now look at the system architecture, decomposition, and database design.
 
 ###### Architecture of the System
-The IP/ Patent management system follows a simple 3 tier client/server architecture. The client can use web browsers to access the system through the local area network of the organisation using the HTTPS protocol.
+The IP/ Patent management system follows a simple 3 tier client/server architecture. The client can use web browsers to access the system through the local area network of the organization using the HTTPS protocol.
 
 ![System-Architecture](/images/content/2022/07/System-Architecture.png)
 
@@ -114,7 +114,7 @@ The `Report` subsystem generate the patent application report for submission to 
 
 The `Monitor` subsystem monitor the progress of the patent application. In addition, it send reminder/notification of any upcoming patent application deadline.
 
-The `Research` subsystem deals with retrieval of similar patent that is registered or held by the organisation.
+The `Research` subsystem deals with retrieval of similar patent that is registered or held by the organization.
 
 ###### Low-Level Design
 The following code shows some of the classes involved in IP/ Patent Management System Software.
@@ -166,7 +166,7 @@ class Patent:
         approval_status: str
         ):
 ```
-The `Staff` class is the base class for all the employees of the organisation which include the necessary information for authenticating a user. The `Inventor` class inherits from the Staff class and has functions to add and edit the patent application.
+The `Staff` class is the base class for all the employees of the organization which include the necessary information for authenticating a user. The `Inventor` class inherits from the Staff class and has functions to add and edit the patent application.
 
 The `Reviewer` class also inherit from the Staff class. The `Reviewer` class can view the patent application and add comments to request more information about the patent application.
 
@@ -183,7 +183,7 @@ The above database diagram shows the schema for the IP/ Patent management system
 
 Generally, there are three types of relationships in a relational database system. These are one-to-one, one-to-many, and many-to-many relationships. The system under consideration has one-to-many and many-to-many relationships.
 
-The Patent_Application tables store data of the patent application. The Patent_Application table acts as relation between the Inventor_Staff, Reviewer_Staff and Approver_Staff. The Approved_Patent table stores the details about approved patents held by the organisation.
+The Patent_Application tables store data of the patent application. The Patent_Application table acts as relation between the Inventor_Staff, Reviewer_Staff and Approver_Staff. The Approved_Patent table stores the details about approved patents held by the organization.
 
 ## Turnkey Software Solutions
 Below are some of the turnkey software solutions available:
