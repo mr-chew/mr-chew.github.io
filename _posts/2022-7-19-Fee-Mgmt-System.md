@@ -4,7 +4,7 @@ title:  System Design of Fee Management System
 categories: [System Design]
 ---
 
-We will go over the essential elements a fee management system must have, its high-level, low-level design, database design. We will also look at some of the features that turnkey software solutions offer.
+We will go over the essential elements a fee management system must have, its high-level, low-level design and database design. We will also look at some of the features that turnkey software solutions offer.
 
 **Table of contents:**
 
