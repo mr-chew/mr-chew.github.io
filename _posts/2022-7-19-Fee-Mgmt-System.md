@@ -27,7 +27,8 @@ A fee management software is a software that automates the collection of fees an
 ## System Requirements
 
 The key requirements that need to be offered by the fee management system can be classified into functional and non-functional requirements.
-Functional Requirements
+
+###### Functional Requirements
 
 1. Allow the school administrator to add and remove new students.
 2. Allow the school administrator to add and manage the subjects and the associated fees.
