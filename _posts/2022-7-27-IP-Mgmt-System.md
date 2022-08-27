@@ -56,32 +56,26 @@ A better understanding of the functional requirements can be gained from the use
 
 ###### Non - Functional Requirements
 
-**Usability**
-
+**Usability**  
 The system should provide an interactive user-friendly interface that is easily understandable for all users.
 
-**Availability**
-
+**Availability**  
 The System should be available at least during the Patent Registration office operating hours and must be recovered within an hour if it fails. The system should respond to the requests within two seconds.
 
-**Dependability**
-
+**Dependability**  
 The system should provide consistent performance with easy tracking of records and updating of records.
 
-**Maintainability**
-
+**Maintainability**  
 The software should be easily maintainable and adding new features and making changes to the software must be as simple as possible.
 
-**Scalability**
-
+**Scalability**  
 For a large organization like a university, the expected user load for the system will be significant. University are a research center with a massive database of information. The ability to scale is critical to the system's adoption success.
 
 Applying technology such Hadoop's MapReduce will provide the ability to scale the system. Hadoop is a highly scalable platform, due to its ability to store and distribute enormous data sets across a large number of machines. The servers used here are relatively inexpensive and can run in parallel. The system's processing power can be enhanced by adding extra servers. Traditional relational database management systems(RDBMS) couldn't handle big data sets at scale.
 
 One such application of MapReduce is Distributed Grep. In plain-text data collections, Distributed Grep looks for lines that match a regular expression. It's used to look for a specific pattern in a large number of files. This will come in handy if the patent application reviewer has to look for related patents in a huge database.
 
-**Security**
-
+**Security**  
 A user login mechanism will be established to prevent unauthorized employees from accessing the system. Any member who has access to the system will be requested to create a username and password that will allow them to use the system's capabilities.
 
 To prevent unauthorized parties from accessing, viewing, or changing parts and information within the system, the system is expected to have several access levels depending on which staff member is accessing the system, such as Inventor, Reviewer or Approver. This means that certain aspects of the system will be restricted to a small group of people based on their position or authority within the organization.
