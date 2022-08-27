@@ -48,24 +48,16 @@ System - The system is the fee management system itself. It keeps track of the i
 
 ###### Non - Functional Requirements
 
-**Usability**
-
-
+**Usability**  
 Usability is the main non-functional requirement for a fee management system. The user interface (UI) should be simple enough for everyone to understand and get the relevant information without any special training. Different languages can be provided based on the requirements.
 
-**Accuracy**
-
-
+**Accuracy**  
 Accuracy is another important non-functional requirement for the fee management system. The fees calculated should be correct, consistent, and reliable.
 
-**Availability**
-
-
+**Availability**  
 The System should be available at least during the academic year and must be recovered within an hour if it fails. The system should respond to the requests within two seconds.
 
-**Maintainability**
-
-
+**Maintainability**  
 The software should be easily maintainable and adding new features and making changes to the software must be as simple as possible.
 
 #### Software Requirements
