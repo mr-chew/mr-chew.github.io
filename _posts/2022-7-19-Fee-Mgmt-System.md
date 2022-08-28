@@ -58,7 +58,7 @@ Accuracy is another important non-functional requirement for the fee management 
 The System should be available at least during the academic year and must be recovered within an hour if it fails. The system should respond to the requests within two seconds.
 
 **Maintainability**  
-The software should be easily maintainable and adding new features and making changes to the software must be as simple as possible.
+The software should be easily maintainable, with adding new features and making changes as simple as possible. 
 
 #### Software Requirements
 
