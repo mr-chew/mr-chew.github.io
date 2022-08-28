@@ -79,8 +79,7 @@ The user can access the system through a client site or app with a registered ac
 
 Handling the authentication is done by a separate service. The authentication service has direct access to the accounts on the database. The notification service checks the database for any overdue invoices and alerts the user and the school administrator.
 
-A relational database like MySQL can be utilized because the data being stored is primarily relational, such as user accounts and fees information.
-For backup and availability, the database servers can be configured in a master-slave arrangement. 
+Data such as user accounts and fees information is primarily relational. We can use a relational database like MySQL to store them. For backup and availability, the database servers can be configured in a master-slave arrangement. 
 
 #### For a Large Setting (University):
 ![high-level-design-large](/images/content/2022/07/high-level-design-large.png)
