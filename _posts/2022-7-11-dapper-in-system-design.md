@@ -59,7 +59,7 @@ The Dapper Depot API (DAPI) provide directed access to the raw data contained wi
 
 **Dapper user Interface**  
 Using the web-based user interface, the user selects the service, time window and the relevant metric value (such as time delay) for their investigation. A table of all performance summaries that meet this condition pattern will be retrieved. Next, the user can select a single distributed execution pattern for further examination. It will show the detailed timestamp distribution of the selected trace.
-![user-interface](/content/images/2022/04/user-interface.png)
+![user-interface](/images/content/2022/07/user-interface.png)
 *Dapper user interface (Dapper a Large-Scale Distributed Systems Tracing Infrastructure, Google Technical Report dapper 2010)*  
 
 ## Usage of Dapper
