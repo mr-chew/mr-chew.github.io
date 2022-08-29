@@ -66,7 +66,7 @@ Second difference is that data in Hadoop is a compressed text file or other data
 
 Lastly, let assume that there are DataNode failure in Hadoop resulting in incomplete data set. In this instance Hadoop would not hold up the response to the user. It would provide the user an immediate answer and eventually it would have a consistent answer. The eventual consistency methodology in Hadoop is a better model for reading continuously updating feeds of unstructured data across 1000’s of servers.
 
-On the other hand, RDBMS take a 2 phase commit approach. RDBMS must have complete consistency across all the nodes before it release anything to the user. The RDBMS 2 phase commit methodology is well suited for managing and rolling up transactions, so we know we got the right answer.
+On the other hand, RDBMS take a two phase commit approach. RDBMS must have complete consistency across all the nodes before it release anything to the user. The RDBMS two phase commit methodology is well suited for managing and rolling up transactions, so we know we got the right answer.
 
 ## Use case of Hadoop
 
