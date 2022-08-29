@@ -42,7 +42,7 @@ pyautogui.write("# Hello world!",0.25)
 
 ## press() function
 
-Using the `pyautogui.press()` function, we can simulate the user pressing specific key on the keyboard. `pyautogui.press(['right', 'right'])` is equivalent to pressing the right arrow twice. `pyautogui.press('\t')` has the same result as press the Tab key once on the keyboard.
+Using the `pyautogui.press()` function, we can simulate the user pressing specific key on the keyboard. `pyautogui.press(['right', 'right'])` is equivalent to pressing the right arrow twice. `pyautogui.press('\t')` has the same result as pressing the Tab key once on the keyboard.
 
 ```python
 import pyautogui
