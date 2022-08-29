@@ -199,7 +199,7 @@ for item in quotes:
     pyautogui.press('\n')
 ```
 
-Content of the `pangram.txt` file is listed below for reference, you may copy it to try out the above python script that simulate user typing on the keyboard.
+Content of the `pangram.txt` file is listed below for your reference, you may copy it to try out the above python script that simulate user typing on the keyboard.
 ```
 Pangrams - a unique sentence in which every letter of the alphabet is used at least once. The name comes from the Greek root words pan, meaning all, and gram, meaning something written or recorded. Consider the following examples.
 
