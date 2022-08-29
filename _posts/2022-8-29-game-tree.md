@@ -20,7 +20,7 @@ Searching through Game Tree is the core of board-game artificial intelligence. L
 
 The course of the game is determined by the players decisions in a deterministic game. Rolling dice or shuffling cards are examples of randomness involved in a non-deterministic game.
 
-The full game state can be seen by both players at all times in perfect information games. Everyone has their cards visible on the table or the board. Each player can only see a small part of the game state in hidden information games. In card games, players are dealt a few cards and can't see what the other players are holding. Hidden information games appeal to players because they have to guess what the other players know based on their decisions.
+In perfect information games, both players can see the entire game state at all times. Everyone's cards are visible on the table or board. In hidden information games, each player can only see a small portion of the game state. Players in card games are dealt a few cards and cannot see what the other players are holding. Players enjoy hidden information games because they must guess what the other players know based on their decisions. 
 
 ## Solving Game Tree
 
