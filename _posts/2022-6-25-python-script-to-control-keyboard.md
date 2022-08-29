@@ -144,7 +144,7 @@ The following key strings can be passed to the `press()`, `keyDown()`, `keyUp()`
 
 ## Simulate typing
 
-In the example below we simulate typing by using function provided by the `pyautogui` module. The `time` module is imported for our `time.sleep()` function. Lastly, the `pathlib` module provide the function to open and read the content of our text file.
+In the example below, we simulate typing by using function provided by the `pyautogui` module. The `time` module is imported for our `time.sleep()` function. Lastly, the `pathlib` module provide the function to open and read the content of our text file.
 
 ```python
 import pyautogui
