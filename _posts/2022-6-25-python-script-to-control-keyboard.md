@@ -76,7 +76,7 @@ pyautogui.press('2')
 
 ## hold() function
 
-We can achieve the same result as above by using with `pyautogui.hold('shift')` statement.
+We can achieve the same result as above by using `pyautogui.hold('shift')` function.
 
 ```python
 import pyautogui
