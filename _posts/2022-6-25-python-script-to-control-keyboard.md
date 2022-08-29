@@ -132,7 +132,7 @@ The following key strings can be passed to the `press()`, `keyDown()`, `keyUp()`
 | `'enter', '\n', 'return', '\r'`   | `Enter` Key  |
 | `'\t'`   | `Tab` key  |
 | `'esc'`   | `Esc` key  |
-| `'shift'`, `'shiftleft'`, `''shiftright'`   | `Shift` key  |
+| `'shift'`, `'shiftleft'`, `'shiftright'`   | `Shift` key  |
 | `'ctrl'`, `'ctrlleft'`, `'ctrlright'`   | `Ctrl` key  |
 | `'alt'`, `'altleft'`, `'altright'`   | `Alt` key  |
 | `'delete'`   | `Delete` key  |
