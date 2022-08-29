@@ -4,7 +4,7 @@ title:  Python script to control keyboard
 categories: [Python]
 ---
 
-We will create a Python script to control the keyboard by stimulating key combinations and stimulating typing.
+We will create a Python script to control the keyboard by simulating key combinations and simulating typing.
 
 **Table of contents:**
 
