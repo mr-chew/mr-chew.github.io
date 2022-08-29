@@ -298,7 +298,7 @@ Tic-Tac-Toe Game Tree |
 
 Connect Four Game Tree |  
 ---|---
-![game-tree-03-1](/images/content/2022/08/game-tree-03-1.png) | 
+![game-tree-03](/images/content/2022/08/game-tree-03.png) | 
 
 Connect Four Game Tree |  
 ---|---
